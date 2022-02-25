@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+
+}
+
+body {
+	margin:0;
+}
+
+header, section {
+	padding:50px 0;
+}
+
+header {
+	padding: 200px 0;
+	background: url(..//img/bg.png);
+}
+
+.btn {
+	display: block;
+	max-width: 200px;
+	margin: 0 auto;
+	color: white;
+	background-color: orange;
+	margin-top:50px;
+}
+
+.group {
+	padding-top: 20px
+}
+
+.groups p {
+	text-align:center;
+}
+
+.group {
+	background-color: #fff;
+}
+
+.about {
+	background: #EDEDED;
+}
+
+
+.img_volki {
+min-height: 300px;
+padding-bottom: 0;
+}
+
+.input_areas {
+margin-top: 25px;
+}
+
+
+
+footer{
+	background: #EDEDED;
+	padding: 25px 0;
+}

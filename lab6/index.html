@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Lab6</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="text-center text-white">Прекрасный Bootstrap заповедник</h1>
+					<a href="#" id="btn_more" class=" btn btn-lg text-uppercase">Подробнее</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="info">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="text-center align-top mb-5">Наш заповедник предоставляет</h2>
+				</div>
+			</div>
+			<div class="row   groups">
+				<div class="col-xl-4 col-md-12 col-sm-12 group mt-md-3">
+					<img src="img/Group.png" class="rounded mx-auto d-block " alt="">
+					<h5 class="text-center">Фотографии заповедника</h5>
+					<p class="text-justify">
+						Здесь Вы найдете милые  фотографии нашими <br> любимцами и не только...
+					</p>
+				</div>
+				<div class="col-xl-4 col-md-12 col-sm-12 group mt-md-3">
+					<img src="img/location.png" class="rounded mx-auto d-block" alt="">
+					<h5 class="text-center">	Маршруты по Заповеднику</h5>
+					<p class="text-justify">
+						Наши экскурсоводы покажут Вам самые красивые места, где Вы когда-либо были!
+					</p>
+				</div>
+				<div class="col-xl-4 col-md-12 col-sm-12 group mt-md-3">
+					<img src="img/Mask_Group.png" class="rounded mx-auto d-block " alt="">
+					<h5 class="text-center">Информация об обитателях</h5>
+					<p class="text-justify">
+						Мы обязательно ответим на все вопросы и если что, дадим рекомендации
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class=about>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="text-center  mt-1 mb-5">
+						О заповеднике
+					</h2>
+				</div>
+				<div class="col xl-9 col-lg-9 col-md-12">
+					<h4>Заповедник «Курильский»</h4>
+					<p> Заповедник «Курильский» – уникальное место России. Два его участка расположены в северной и южной части острова Кунашир, третий кластер находится на островах Дёмина и Осколки (Малая Курильская гряда) общей площадью 65 861 га. Это один из немногих заповедников России, территория которых выходит на морское побережье или со всех сторон окружена морем (Охотское море, Тихий океан). Из-за уникального расположения, вулканической активности и удалённости от материковой части здесь сохраняется уголок поистине неповторимой природы.</p>
+					<p>
+					В административном управлении заповедника «Курильский» с самых первых лет его образования находится подведомственная ООПТ федерального значения – заказник «Малые Курилы», в состав которого входят территории острова Шикотан (частично) и всех островов Малой Курильской гряды (за исключением островов Демина и Осколки) вместе с одномильной акваторией Тихого океана.
+					</p>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-12 text-center">
+					<img src="img/bolshaya-koshaga_volki.jpg" alt="" class="img-fluid img_volki">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="text-center ">Свяжись с нами</h2>
+				</div>
+			</div>
+			<div class="row align-items-center justify-content-center">
+				<div class="col-lg-6 col-md-4 mt-5 ">
+					<input type="text" class="form-control" id="name" placeholder="Введите ваше имя" aria-label="default">
+					<input type="text" class="form-control input_areas" id="phone" placeholder="Введите ваш номер" aria-label="default">
+					<textarea class="form-control comment_area mt-4"  rows="5"
+							placeholder="Введите ваш комментарий"></textarea>
+					<a href="#" onclick=checkForm(this) class="btn  btn-lg " data-bs-toggle="modal" data-bs-target="#exampleModal">Отправить</a>
+				</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+			<div class="text-center">
+					<p>all rights reserved</p>
+			</div>
+
+	</footer>
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
