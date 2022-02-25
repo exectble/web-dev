@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="log.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Delivery</title>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg " style="background-color:orange;">
+
+        <a class="navbar-brand" href="#"><img src="log.png"  width="50" height="50"></a>
+        <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="color:#fff;">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:#fff;">О нас</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#fff;">
+                        Подробнее
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Доставка</a>
+                        <a class="dropdown-item" href="#">Сотрудничество</a>
+                        <a class="dropdown-item" href="#">Контакты</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+<section>
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img class="bd-placeholder-img" width="100%" height="100%"
+                   preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                  <img id="crs1" src="img/carous1.jpg">
+              <div class="carousel-caption">
+                  <h1>Фраза громкого заголовка 1</h1>
+                  <p>Привлекательный текст 1</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img class="bd-placeholder-img" width="100%" height="100%"
+                   preserveAspectRatio="xMidYMid slice" focusable="false" role="img"></svg>
+              <img id="crs2" src="img/carous2.jpg">
+              <div class="carousel-caption d-none d-md-block">
+                  <h1>Фраза громкого заголовка 2</h1>
+                  <p>Привлекательный текст 2</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img class="bd-placeholder-img" width="100%" height="100%"
+                   preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                  <img id="crs3" src="img/carous3.jpg">
+              <div class="carousel-caption d-none d-md-block">
+                  <h1>Фраза громкого заголовка 3</h1>
+                  <p>Привлекательный текст 3</p>
+              </div>
+          </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+  </div>
+</section>
+<section>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-4">
+              <h2>Очень </h2>
+              <div><img src="img/variaty.jpg" width="140" height="140"></div>
+              <p>Очень большой выбор</p>
+          </div>
+          <div class="col-lg-4">
+              <h2>Быстрая</h2>
+              <div><img src="img/speed.png" width="140" height="140"></div>
+              <p>Самая быстрая во всем городе</p>
+          </div>
+          <div class="col-lg-4">
+              <h2>Доставка</h2>
+              <div><img src="img/anytime.png" width="140" height="140"></div>
+              <p>Доставка в любое время</p>
+          </div>
+      </div>
+      <hr>
+      <h3>Оформление заказа</h3>
+      <div class="container" >
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-8 col-sm-10 mt-5 " >
+                  <form>
+                      <div id="action_form" style="background-color:orange;">
+                          <div class="form-row">
+                              <div class="form-group col-md-4 justify-content-center" style="margin-top:25px;margin-left:30%;margin-bottom:25px;">
+                                  <label class=" justify-content-center" for="inputAdm" style=>Административный округ</label>
+                                  <select id="inputAdm" class="form-control form-control">
+                                      <option selected>любой</option>
+                                  </select>
+                              </div>
+                              <div class="form-group col-md-4" style="margin-top:25px;margin-left:30%;margin-bottom:25px;">
+                                  <label for="inputDistrict">Район</label>
+                                  <select id="inputDistrict" class="form-control form-control">
+                                      <option selected>любой</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                              <div class="form-group col-md-4" style="margin-top:25px;margin-left:30%;margin-bottom:25px;">
+                                  <label for="inputTypeObject">Тип заведения</label>
+                                  <select id="inputTypeObject" class="form-control form-control">
+                                      <option selected>любой</option>
+                                  </select>
+
+                              </div>
+                              <div class="form-check col-3" style="margin-left:30%;">
+                                  <input class="form-check-input" type="checkbox" id="isSocial">
+                                  <label class="form-check-label" for="isSocial">
+                                      Социальные скидки
+                                  </label>
+                              </div>
+                          </div>
+                          <a onclick="findByFilter()" class="btn btn-primary btn-lg btn-block "
+                             style="background-color:blue;border:2px solid black;margin-bottom:10px;">Найти подходящее заведение
+                          </a>
+                      </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <hr>
+      <h3>Меню</h3>
+
+      <div class="container">
+          <div id="allRest" class="row card-group"></div>
+          <hr>
+          <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-sm justify-content-center" id="navigation"></ul>
+          </nav>
+          <hr>
+          <div id="dishes" class="row"></div>
+
+
+          <hr>
+          <h3>Дополнительные опции заказа</h3>
+
+          <div class="row">
+              <div class="col-lg-8 col-md-6 col-sm-12 no-margin">
+                  <div class="w-100" id="allPrice"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                  <ul class=" list-group mb-3">
+                      <li class="list-group-item d-flex justify-content-between lh-condensed">
+                          <div class="w-100 text-left">
+                              <h6 class="w-100">Быстрая доставка</h6>
+                              <small class="text-muted">Цена увеличивается на 20%</small>
+                          </div>
+                          <span class="text-muted">
+                      <input class="form-check-input fast" type="checkbox" name="exampleCheckboxes" id="fast">
+                  </span>
+                      <li class="list-group-item d-flex justify-content-between lh-condensed">
+                          <div class="w-100 text-left">
+                              <h6 class="w-100">Только горячим</h6>
+                              <small class="text-muted">Если заказ будет холодным, цена будет снижена на 30%</small>
+                          </div>
+                          <span class="text-muted">
+                      <input class="form-check-input" type="checkbox" name="exampleCheckboxes" id="cold">
+                  </span>
+                      </li>
+                  </ul>
+                  <hr>
+                  <a type="button" class="w-100 btn btn-primary btn-lg btn-block"
+                          data-toggle="modal"
+                          data-target=".bd-example-modal-lg" id="modal_window" style="background-color:orange;" onclick="alertfunc()">Оформить заказ
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel" style="font-weight:bold">Оформление
+                    заказа</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h7 style="font-weight:bold">Выбранные позиции</h7>
+                <table class="table table-sm">
+                    <thead class="thread-light">
+                    <tr>
+                        <th class="col-1">#</th>
+                        <th class="col-5">Название</th>
+                        <th class="col-2">цена</th>
+                        <th class="col-2">количество</th>
+                        <th class="col-2">сумма</th>
+                    </tr>
+                    </thead>
+                    <tbody id="modal_positions">
+
+                    </tbody>
+                </table>
+                <hr>
+                <h7 style="font-weight:bold">Дополнительные опции</h7>
+                <ul id="choosed"></ul>
+                <hr>
+                <h5 style="font-weight:bold">Информация о предприятии</h5>
+                <div class="container themed-container">
+                    <div class="row mb-3">
+                        <div class="col-6 themed-grid-col">Название</div>
+                        <div class="col-6 themed-grid-col" id="modal_name"></div>
+
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6 themed-grid-col">Административный округ</div>
+                        <div class="col-6 themed-grid-col" id="modal_admArea"></div>
+
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6 themed-grid-col">Район</div>
+                        <div class="col-6 themed-grid-col" id="modal_district"></div>
+
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6 themed-grid-col">Адрес</div>
+                        <div class="col-6 themed-grid-col" id="modal_address"><small
+                                class="text-muted"></small></div>
+
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6 themed-grid-col">Рейтинг</div>
+                        <div class="col-6 themed-grid-col" id="modal_rate"></div>
+
+                    </div>
+                </div>
+                <hr>
+
+                <h5 style="font-weight:bold">Доставка</h5>
+                <div class="container themed-container">
+                    <div class="row mb-3">
+                        <div class="col-6 themed-grid-col">Зона Доставки:</div>
+                        <div class="col-6 themed-grid-col">
+                            <select class="form-control"
+                                    style=" border: 1px solid #6b6a6a; box-shadow: none;">
+                                <option selected>Выберите зону</option>
+                                <option>Первая зона</option>
+                                <option>Вторая зона</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-6 themed-grid-col">Адрес Доставки</div>
+                        <div class="col-6 themed-grid-col"><textarea class="form-control"
+                                                                     id="exampleFormControlTextarea1"
+                                                                     rows="3"
+                                                                     style=" border: 1px solid #6b6a6a; box-shadow: none;"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-6 themed-grid-col">Стоимость доставки</div>
+                        <div class="col-6 themed-grid-col">300 руб.</div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-6 themed-grid-col">ФИО получателя</div>
+                        <div class="col-6 themed-grid-col">
+                            <input type="text" class="form-control"
+                                   aria-label="Small"
+                                   aria-describedby="inputGroup-sizing-sm"
+                                   size="2"
+                                   style=" border: 1px solid #6b6a6a; box-shadow: none;"
+                                   placeholder="Введите ФИО..."></div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container themed-container">
+                <div class="row mb-3">
+                    <div class="col-3 themed-grid-col" align="left">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить
+                        </button>
+                    </div>
+                    <div class="col-9 themed-grid-col" align="right">
+                        <button type="button" class="btn btn-success" style="background:orange;">Оплатить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer text-center py-4 text-muted border-top mt-3">
+    <h5>ООО &laquo;Delivery&raquo;</h5>
+    <div class="row fs-3">
+        <div class="col-lg-4">
+            <a class="text-decoration-none" href="#"> delivery@gmail.com</a>
+        </div>
+        <div class="col-lg-4">
+            <a class="text-decoration-none" href="#"> delivery.ru</a>
+        </div>
+    </div>
+</footer>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</div>
+
+</body>
+</html>
