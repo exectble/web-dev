@@ -497,8 +497,5 @@ function chunkArray(arr, chunk) {
 }
 
 window.onload = function () {
-    document.getElementsByName('exampleCheckboxes').forEach(el => el.onclick = (e => {
-        checkboxClick(el);
-    }));
     getAll();
 };
