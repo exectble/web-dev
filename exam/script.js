@@ -187,7 +187,6 @@ function createCards(data, insertEl) {
             document.getElementById('modal_district').innerText = data.district;
             document.getElementById('modal_address').innerText = data.address;
             document.getElementById('modal_rate').innerText = data.rate;
-            restaurants = data;
             fillDishes(data);
         };
 
@@ -410,19 +409,9 @@ function createNavigation() {
     removeAllElementsInParentElement(element);
     let prevPage = document.createElement('li');
     prevPage.className = 'page-item'
-    if (0 === currentPage) {
-        prevPage.classList.add('disabled')
-        prevPage.classList.add('active')
-    }
     let pageLink = document.createElement('a');
     pageLink.className = 'page-link';
     pageLink.innerText = 'Previous';
-    pageLink.onclick = ev => {
-        if (currentPage > 0) {
-            createCards(allRestaraunts[currentPage], 'allRest');
-            createNavigation();
-        }
-    }
     prevPage.appendChild(pageLink);
     element.appendChild(prevPage);
 
@@ -433,10 +422,6 @@ function createNavigation() {
     } else {
         if (currentPage < 4) {
             for (let i = 0; i < 7; i++) {
-                element.appendChild(createPageLink(i));
-            }
-        } else if (currentPage > allRestaraunts.length - 4) {
-            for (let i = allRestaraunts.length - 7; i < allRestaraunts.length; i++) {
                 element.appendChild(createPageLink(i));
             }
         } else {
@@ -451,19 +436,7 @@ function createNavigation() {
     let nextLink = document.createElement('a');
     nextLink.innerText = 'Next';
     nextLink.className = 'page-link'
-    nextLink.onclick = ev => {
-        if (currentPage < allRestaraunts.length - 1) {
-            currentPage++;
-            createCards(allRestaraunts[currentPage], 'allRest');
-            createNavigation();
-        }
-    }
-    if (currentPage === allRestaraunts.length - 1) {
-        nextPage.classList.add('disabled')
-        nextPage.classList.add('active')
-    }
     nextPage.appendChild(nextLink);
-
     element.appendChild(nextPage);
 }
 
@@ -472,7 +445,7 @@ function createPageLink(id) {
     itemPage.className = 'page-item'
     if (id === currentPage) {
         itemPage.classList.add('disabled')
-        itemPage.classList.add('active')
+
     }
 
     let itemLink = document.createElement('a');
