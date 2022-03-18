@@ -7,6 +7,7 @@ def main(message):
             elif message[i:j] == message[i:j][::-1]:
                 res = message[i:j]
     if len(res)<2:
+        print("Исходное сообщение:",message)
         print("Палиндромов нет")
     else:
         print("Исходное сообщение:",message)
